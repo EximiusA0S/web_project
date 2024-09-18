@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-import plotly_express as pxnot
+import plotly_express as px
 
 st.header('¡Bienvenido a mi primera aplicación web!')
 
@@ -18,5 +18,5 @@ if build_histogram:
     st.write('Construir un gráfico de dispersión para la columna price')
     fig = px.scatter(car_data, x="model_year", y="price")
     fig.show()
-    
+
 
